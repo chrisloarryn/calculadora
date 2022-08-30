@@ -1,3 +1,3 @@
-module github.com/RichardTorres1/calculadora.git
+module github.com/RichardTorres1/calculadora
 
 go 1.19
