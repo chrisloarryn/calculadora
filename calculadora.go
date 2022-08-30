@@ -11,6 +11,7 @@ import (
 type calc struct{}
 
 func (calc) Operate(entrada string, operador string) int {
+	fmt.Println(entrada)
 	entradaLimpia := strings.Split(entrada, operador)
 	operador1 := parsear(entradaLimpia[0])
 	operador2 := parsear(entradaLimpia[1])
@@ -31,6 +32,7 @@ func (calc) Operate(entrada string, operador string) int {
 
 }
 func parsear(entrada string) int {
+	fmt.Println(entrada)
 	operador, _ := strconv.Atoi(entrada)
 	return operador
 }
